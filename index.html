@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Canvas Co | Branding, Print & Signage Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --cyan: #00AEEF;
+      --magenta: #EC008C;
+      --yellow: #FFF200;
+      --dark-bg: #121217;
+      --card-bg: #1e1e26;
+      --text-primary: #ffffff;
+      --text-secondary: #94a3b8;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      margin: 0;
+    }
+
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+
+    /* Artistic Glows & Accents */
+    .glow-cyan {
+      filter: blur(100px);
+      opacity: 0.15;
+      background: var(--cyan);
+    }
+
+    .glow-magenta {
+      filter: blur(100px);
+      opacity: 0.15;
+      background: var(--magenta);
+    }
+
+    .glow-yellow {
+      filter: blur(100px);
+      opacity: 0.15;
+      background: var(--yellow);
+    }
+
+    .premium-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .premium-card:hover {
+      border-color: rgba(255, 255, 255, 0.1);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+    }
+
+    .text-gradient {
+      background: linear-gradient(to right, #fff 40%, rgba(255, 255, 255, 0.6));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .accent-strip {
+      height: 4px;
+      background: linear-gradient(90deg, var(--cyan), var(--magenta), var(--yellow));
+    }
+
+    .nav-glass {
+      background: rgba(18, 18, 23, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-premium {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .btn-premium::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--magenta);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.4s ease;
+    }
+
+    .btn-premium:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .stagger-grid>div:nth-child(even) {
+      transform: translateY(30px);
+    }
+
+    @media (max-width: 768px) {
+      .stagger-grid>div:nth-child(even) {
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@19.2.4",
+        "react-dom": "https://esm.sh/react-dom@19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@19.2.4/",
+        "react-router-dom": "https://esm.sh/react-router-dom@6.28.0?deps=react@19.2.4,react-dom@19.2.4",
+        "react/": "https://esm.sh/react@19.2.4/"
+      }
+    }
+    </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="selection:bg-[#EC008C] selection:text-white">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
