@@ -1,6 +1,6 @@
 
 import { ServiceDetail, HeroSlide, ServiceSummary, FAQItem, CaseScenario } from '../types';
-
+import { assets } from '../assets';
 
 export const HERO_SLIDES: HeroSlide[] = [
   {
@@ -9,7 +9,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     subheadline: "Strategic brand identity and execution that keeps your business visually consistent across every touchpoint.",
     cta: "Start Your Brand Blueprint",
     link: "/services/brand-identity",
-    image: "https://placehold.co/1920x1080/000000/FFFFFF"
+    image: assets.slide01
   },
   {
     title: "Print That Converts, Not Just Looks Good",
@@ -17,7 +17,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     subheadline: "High-quality print and digital collateral designed to inform, persuade, and convert.",
     cta: "Explore Print Solutions",
     link: "/services/print-collateral",
-    image: "https://placehold.co/1920x1080/00AEEF/FFFFFF"
+    image: assets.slide02
   },
   {
     title: "Visibility That Drives Foot Traffic",
@@ -25,7 +25,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     subheadline: "Durable, compliant, high-impact signage built for real-world conditions.",
     cta: "View Signage Services",
     link: "/services/signage-graphics",
-    image: "https://placehold.co/1920x1080/EC008C/FFFFFF"
+    image: assets.slide03
   },
   {
     title: "One Partner. End-to-End Execution.",
@@ -33,7 +33,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     subheadline: "Design, production, and installation managed under one accountable partner.",
     cta: "Talk to The Canvas Co",
     link: "/contact",
-    image: "https://placehold.co/1920x1080/FFF200/000000"
+    image: assets.slide04
   }
 ];
 
@@ -64,6 +64,7 @@ export const SERVICE_SUMMARIES: ServiceSummary[] = [
 export const SERVICES_DATA: Record<string, ServiceDetail> = {
   "brand-identity": {
     id: "brand-identity",
+    image: assets.brandIdentityStrategy,
     title: "Brand Identity & Strategy (The Blueprint)",
     tagline: "The foundation of every customer interaction.",
     overview: "Your brand identity is the foundation of every customer interaction. We design distinctive, practical brand systems that scale across print, signage, digital, and physical environments.",
@@ -101,6 +102,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
   },
   "print-collateral": {
     id: "print-collateral",
+    image: assets.printAndDigital,
     title: "Print & Digital Collateral (The Handshake)",
     tagline: "Materials that represent your business in moments that matter.",
     overview: "Your printed and digital materials represent your business in moments that matter. We design and produce collateral that communicates clearly and professionally.",
@@ -137,6 +139,7 @@ export const SERVICES_DATA: Record<string, ServiceDetail> = {
   },
   "signage-graphics": {
     id: "signage-graphics",
+    image: assets.signageAndGraphics,
     title: "Signage & Graphics (The Impact)",
     tagline: "Visible, compliant, and built to last.",
     overview: "Signage is often the first physical interaction customers have with your brand. We design, produce, and install signage that is visible, compliant, and built to last.",

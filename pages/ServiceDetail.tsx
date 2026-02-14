@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { SERVICES_DATA } from '../content/siteContent';
-import Button from '../components/Button';
 import Accordion from '../components/Accordion';
 import ContactForm from '../sections/ContactForm';
 import ScrollReveal from '../components/ScrollReveal';
@@ -27,7 +26,18 @@ const ServiceDetail: React.FC = () => {
       </div>
 
       {/* Hero Header */}
-      <section className="relative pt-48 pb-24 overflow-hidden">
+      <section className="relative pt-48 pb-24 h-screen overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={service.image}
+            alt={`The Canvas Co | ${service.title}`}
+            className="w-full h-full object-cover"
+          />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#00AEEF]/85 via-[#94a3b8]/75 to-transparent mix-blend-multiply" />
+        </div>
+
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
           <ScrollReveal>
             <div className="flex items-center gap-4 mb-8">
@@ -43,11 +53,11 @@ const ServiceDetail: React.FC = () => {
       </section>
 
       {/* Main Content */}
-      <section className="pb-32 relative z-10">
+      <section className="pb-32 pt-24 relative z-10">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
             <div className="lg:col-span-7 space-y-24">
-              
+
               {/* Overview */}
               <ScrollReveal>
                 <div className="flex items-center gap-6 mb-8">

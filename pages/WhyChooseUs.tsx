@@ -1,5 +1,4 @@
 import React from 'react';
-import { WHY_CHOOSE_US_HOMEPAGE } from '../content/siteContent';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
@@ -44,10 +43,10 @@ const WhyChooseUs: React.FC = () => {
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-neutral-500">Differentiation</span>
             </div>
             <h1 className="text-[clamp(3.5rem,10vw,8rem)] font-black uppercase tracking-tighter mb-8 leading-[0.85] text-gradient">
-              The <span className="text-[#EC008C]">Canvas</span> <br/> Advantage.
+              The <span className="text-[#EC008C]">Canvas</span> <br /> Advantage.
             </h1>
             <p className="text-2xl text-neutral-400 font-bold leading-relaxed max-w-3xl italic">
-              Fewer vendors. Clearer accountability. Consistent execution. 
+              Fewer vendors. Clearer accountability. Consistent execution.
               We reduce risk, save time, and ensure your brand performs.
             </p>
           </ScrollReveal>
@@ -81,7 +80,7 @@ const WhyChooseUs: React.FC = () => {
       <section className="py-40 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
           <ScrollReveal>
-             <h2 className="text-5xl md:text-8xl font-black uppercase mb-16 tracking-tighter leading-none text-gradient">
+            <h2 className="text-5xl md:text-8xl font-black uppercase mb-16 tracking-tighter leading-none text-gradient">
               Protect <span className="text-[#00AEEF]">&</span> Elevate
             </h2>
             <Link to="/contact">

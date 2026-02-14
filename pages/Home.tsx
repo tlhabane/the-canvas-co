@@ -20,17 +20,16 @@ const Home: React.FC = () => {
       <section id="services" className="py-32 relative z-10 bg-[#121217]/50 backdrop-blur-3xl">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <ScrollReveal className="mb-24">
-            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8">Strategic <br/> Foundations</h2>
+            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-8">Strategic <br /> Foundations</h2>
             <p className="text-neutral-400 text-lg max-w-xl font-medium">We deliver consistent brand execution across every physical and digital touchpoint.</p>
           </ScrollReveal>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-grid">
             {SERVICE_SUMMARIES.map((service, idx) => (
               <ScrollReveal key={service.id} delay={idx * 150}>
                 <Link to={`/services/${service.slug}`} className="block group">
-                  <div className={`premium-card p-12 h-full rounded-3xl flex flex-col justify-between overflow-hidden relative ${
-                    idx === 0 ? 'bg-[#EC008C]' : idx === 1 ? 'bg-[#1e1e26]' : 'bg-[#00AEEF]'
-                  }`}>
+                  <div className={`premium-card p-12 h-full rounded-3xl flex flex-col justify-between overflow-hidden relative ${idx === 0 ? 'bg-[#EC008C]' : idx === 1 ? 'bg-[#1e1e26]' : 'bg-[#00AEEF]'
+                    }`}>
                     {idx === 1 && (
                       <div className="absolute top-0 right-0 p-8 text-neutral-800/10 text-9xl font-black italic select-none">
                         0{idx + 1}
@@ -64,7 +63,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-end">
             <ScrollReveal>
               <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-12 leading-none">
-                You can't use up <br/> <span className="text-neutral-300">creativity.</span>
+                You can't use up <span className="text-neutral-300">creativity.</span>
               </h2>
               <p className="text-xl text-neutral-600 max-w-lg font-medium leading-relaxed">
                 The more you use, the more you have in your significant mind. We help you deploy it at scale.
@@ -73,7 +72,7 @@ const Home: React.FC = () => {
             <ScrollReveal delay={200}>
               <div className="flex gap-16">
                 <div>
-                  <div className="text-8xl font-black tracking-tighter mb-2 italic">14</div>
+                  <div className="text-8xl font-black tracking-tighter mb-2 italic">04</div>
                   <div className="text-[10px] font-black uppercase tracking-widest text-neutral-400">Years of Experience</div>
                 </div>
                 <div>
@@ -91,7 +90,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-6 lg:px-8 text-center">
           <ScrollReveal>
             <h2 className="text-[clamp(3rem,8vw,6rem)] font-black uppercase tracking-tighter text-gradient mb-12">
-              Ready to <br/> <span className="text-[#FFF200]">Transform?</span>
+              Ready to <br /> <span className="text-[#FFF200]">Transform?</span>
             </h2>
             <Link to="/contact">
               <Button variant="creative" size="lg">Start Your Journey</Button>
@@ -99,7 +98,7 @@ const Home: React.FC = () => {
           </ScrollReveal>
         </div>
       </section>
-      
+
       <div className="accent-strip w-full"></div>
     </div>
   );

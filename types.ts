@@ -34,6 +34,7 @@ export interface ServiceDetail {
   miniCaseScenario: string;
   faqs: FAQItem[];
   cta: string;
+  image: string;
   seo: {
     title: string;
     description: string;

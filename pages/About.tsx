@@ -3,6 +3,7 @@ import { ABOUT_CONTENT } from '../content/siteContent';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 import ScrollReveal from '../components/ScrollReveal';
+import { assets } from '../assets';
 
 const About: React.FC = () => {
   return (
@@ -51,11 +52,11 @@ const About: React.FC = () => {
             </ScrollReveal>
             <ScrollReveal delay={200}>
               <div className="relative group">
-                <div className="aspect-[4/5] bg-neutral-900 overflow-hidden rounded-3xl border border-white/5">
-                  <img src="https://placehold.co/800x1000/1e1e26/FFFFFF?text=Brand+Consistency" alt="" className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0" />
+                <div className="aspect-[4/4] bg-neutral-900 overflow-hidden rounded-3xl border border-white/5">
+                  <img src={assets.brandConsistency} alt="The Canvas Co | Brand Consistency" className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0" />
                 </div>
                 <div className="absolute -bottom-10 -left-10 bg-white text-black p-10 rounded-2xl shadow-2xl hidden md:block">
-                  <div className="text-4xl font-black italic mb-2 tracking-tighter">14Yrs</div>
+                  <div className="text-4xl font-black italic mb-2 tracking-tighter">04Yrs</div>
                   <div className="text-[10px] font-bold uppercase tracking-widest opacity-60">Visual Authority</div>
                 </div>
               </div>
