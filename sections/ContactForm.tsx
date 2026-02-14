@@ -115,7 +115,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ initialService = '', title = 
           size="lg"
           className="w-full"
         >
-          {isSubmitting ? 'Sending...' : 'Deploy Message'}
+          {isSubmitting ? 'Sending Message...' : 'Send Message'}
         </Button>
       </form>
     </div>

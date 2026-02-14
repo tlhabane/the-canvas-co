@@ -192,7 +192,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                       className="w-full mt-6 bg-white text-black hover:bg-neutral-200"
                       disabled={isSubmitting}
                     >
-                      {isSubmitting ? 'ESTABLISHING CONNECTION...' : 'DEPLOY MESSAGE'}
+                      {isSubmitting ? 'BOOKING...' : 'BOOK NOW'}
                     </Button>
                   </form>
                 </div>
