@@ -29,7 +29,7 @@ export const HERO_SLIDES: HeroSlide[] = [
   },
   {
     title: "One Partner. End-to-End Execution.",
-    headline: "From Concept to Installation—Handled",
+    headline: "From Concept to Installation",
     subheadline: "Design, production, and installation managed under one accountable partner.",
     cta: "Talk to The Canvas Co",
     link: "/contact",
