@@ -233,7 +233,7 @@ const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) => {
                   </div>
                   <div>
                     <h3 className="text-[10px] font-black uppercase tracking-widest text-neutral-500 mb-2 italic">DIRECT CHANNEL</h3>
-                    <p className="text-2xl font-black text-white tracking-tighter">info@thecanvasco.co.za</p>
+                    <p className="text-2xl font-black text-white tracking-tighter">hello@thecanvasco.co.za</p>
                   </div>
                 </div>
               </div>

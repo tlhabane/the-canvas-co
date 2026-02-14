@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="text-[10px] font-black uppercase tracking-widest text-neutral-500 mb-2">Direct Channel</h3>
-                    <p className="text-3xl font-black text-white tracking-tighter">info@thecanvasco.co.za</p>
+                    <p className="text-3xl font-black text-white tracking-tighter">hello@thecanvasco.co.za</p>
                   </div>
                 </div>
               </div>

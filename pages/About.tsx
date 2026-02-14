@@ -22,10 +22,10 @@ const About: React.FC = () => {
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-neutral-500">Our Story</span>
             </div>
             <h1 className="text-[clamp(3.5rem,8vw,6rem)] font-black uppercase tracking-tighter mb-8 leading-[0.9] text-gradient">
-              Standard of <br/> Excellence.
+              Standard of <br /> Excellence.
             </h1>
             <p className="text-xl text-neutral-400 max-w-2xl font-medium leading-relaxed">
-              Empowering businesses to stand out through consistent, high-quality visual communication. 
+              Empowering businesses to stand out through consistent, high-quality visual communication.
               We don't just design; we deploy.
             </p>
           </ScrollReveal>
@@ -38,15 +38,15 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <ScrollReveal>
               <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-tight italic text-white">
-                More Than Just <br/> <span className="text-[#EC008C]">a Logo</span>
+                More Than Just <br /> <span className="text-[#EC008C]">a Logo</span>
               </h2>
               <p className="text-xl text-neutral-400 leading-relaxed mb-12 font-medium">
                 {ABOUT_CONTENT.vision}
               </p>
               <div className="flex items-center gap-6">
-                 <Link to="/contact">
-                   <Button variant="creative">Start Rollout</Button>
-                 </Link>
+                <Link to="/contact">
+                  <Button variant="creative">Start Rollout</Button>
+                </Link>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={200}>
@@ -70,7 +70,7 @@ const About: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
             <div className="lg:col-span-5">
               <ScrollReveal>
-                 <div className="flex items-center gap-4 mb-6">
+                <div className="flex items-center gap-4 mb-6">
                   <span className="h-[1px] w-12 bg-black/20"></span>
                   <span className="text-[10px] font-black uppercase tracking-[0.4em] text-neutral-400">The Team</span>
                 </div>

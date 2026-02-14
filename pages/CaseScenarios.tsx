@@ -20,7 +20,7 @@ const CaseScenarios: React.FC = () => {
               <span className="text-[10px] font-black uppercase tracking-[0.4em] text-neutral-500">Proof of Work</span>
             </div>
             <h1 className="text-[clamp(3.5rem,8vw,6rem)] font-black uppercase tracking-tighter mb-8 leading-[0.9] text-gradient">
-              Strategic <br/> <span className="text-[#00AEEF]">Outcomes.</span>
+              Strategic <br /> <span className="text-[#00AEEF]">Outcomes.</span>
             </h1>
             <p className="text-xl text-neutral-400 max-w-2xl font-medium leading-relaxed">
               Real-world challenges solved through integrated design and deployment strategies.
@@ -36,10 +36,10 @@ const CaseScenarios: React.FC = () => {
               <ScrollReveal key={idx}>
                 <div className="premium-card rounded-[3rem] overflow-hidden flex flex-col md:flex-row group border-none">
                   <div className="md:w-2/5 overflow-hidden">
-                    <img 
-                      src={`https://placehold.co/800x800/1e1e26/FFFFFF?text=Scenario+0${idx + 1}`} 
-                      alt="" 
-                      className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110" 
+                    <img
+                      src={`https://placehold.co/800x800/1e1e26/FFFFFF?text=Scenario+0${idx + 1}`}
+                      alt=""
+                      className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-110"
                     />
                   </div>
                   <div className="md:w-3/5 p-12 md:p-20 flex flex-col justify-center relative bg-white text-black">
@@ -76,7 +76,7 @@ const CaseScenarios: React.FC = () => {
           </ScrollReveal>
         </div>
       </section>
-      
+
       <div className="accent-strip w-full"></div>
     </div>
   );

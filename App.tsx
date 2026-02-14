@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import ScrollToTop from './components/ScrollToTop';
 import LoadingSpinner from './components/LoadingSpinner';
 import BookingModal from './components/BookingModal';
+import PolicyDetail from './pages/PolicyDetail';
 
 const PageTransitionWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [loading, setLoading] = useState(true);
@@ -49,6 +50,7 @@ const App: React.FC = () => {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services/:slug" element={<ServiceDetail />} />
+              <Route path="/policy/:type" element={<PolicyDetail />} />
               <Route path="/why-us" element={<WhyChooseUs />} />
               <Route path="/case-scenarios" element={<CaseScenarios />} />
               <Route path="/contact" element={<Contact />} />

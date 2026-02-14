@@ -1,6 +1,7 @@
 
 import { ServiceDetail, HeroSlide, ServiceSummary, FAQItem, CaseScenario } from '../types';
 
+
 export const HERO_SLIDES: HeroSlide[] = [
   {
     title: "Brand Clarity That Scales",

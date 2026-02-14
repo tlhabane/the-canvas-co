@@ -48,7 +48,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
         <div className="flex items-center justify-between h-24">
 
           {/* Logo - Left */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 z-[110]">
             <Link to="/" className="flex flex-col items-start leading-none hover:opacity-80 transition-opacity">
               <span className="text-xl md:text-2xl font-black uppercase tracking-tighter text-white">THE CANVAS CO</span>
               <span className="text-[7px] md:text-[9px] font-bold uppercase tracking-[0.25em] text-neutral-500 mt-1">BILLBOARDS • BANNERS • PRINT</span>
@@ -166,7 +166,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           <div className="space-y-12 mb-16">
             {/* Navigation links */}
             <div className="space-y-6">
-              <span className="text-[10px] font-black uppercase tracking-widest text-neutral-600 italic">Primary Navigation</span>
+              {/*<span className="text-[10px] font-black uppercase tracking-widest text-neutral-600 italic">Primary Navigation</span>*/}
               <div className="space-y-4">
                 <Link to="/" className="block text-4xl font-black uppercase tracking-tighter text-white hover:text-[#EC008C] transition-colors">Home</Link>
                 <Link to="/why-us" className="block text-4xl font-black uppercase tracking-tighter text-white hover:text-[#FFF200] transition-colors">Why Us</Link>
@@ -176,7 +176,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             </div>
 
             <div className="space-y-6 pt-10 border-t border-white/5">
-              <span className="text-[10px] font-black uppercase tracking-widest text-neutral-600 italic">Expertise & Services</span>
+              <span className="text-[10px] font-black uppercase tracking-widest text-neutral-600 italic">Our Expertise & Services</span>
               <div className="space-y-4">
                 {SERVICE_SUMMARIES.map((service) => (
                   <Link

@@ -15,11 +15,11 @@ const Footer: React.FC = () => {
               </div>
             </Link>
             <p className="text-neutral-400 text-sm leading-relaxed font-medium">
-              We deliver world-class brand identity, print collateral, and high-impact signage. 
+              We deliver world-class brand identity, print collateral, and high-impact signage.
               Always on-brand, on-budget, and on-time.
             </p>
           </div>
-          
+
           <div className="md:col-span-2">
             <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-neutral-500 mb-8">Expertise</h4>
             <ul className="space-y-4">
@@ -41,17 +41,17 @@ const Footer: React.FC = () => {
           <div className="md:col-span-4">
             <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-neutral-500 mb-8">Contact</h4>
             <div className="space-y-4">
-              <p className="text-white text-lg font-black italic">info@thecanvasco.co.za</p>
+              <p className="text-white text-lg font-black italic">hello@thecanvasco.co.za</p>
               <p className="text-neutral-400 text-sm font-bold">082 589 6841</p>
             </div>
           </div>
         </div>
-        
+
         <div className="pt-16 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-neutral-600 text-[10px] font-black uppercase tracking-[0.2em]">
           <p>© {new Date().getFullYear()} The Canvas Co. Standard of Excellence.</p>
           <div className="flex space-x-8 mt-8 md:mt-0">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms</a>
+            <Link to="/policy/privacy" className="hover:text-white transition-colors">Privacy</Link>
+            <Link to="/policy/terms" className="hover:text-white transition-colors">Terms</Link>
           </div>
         </div>
       </div>
